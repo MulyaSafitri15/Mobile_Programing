@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
+iimport 'package:flutter/material.dart'; //paket untuk material flutter
 
 class LayoutRow extends StatelessWidget {
+  //kelas layoutrow turunan dari statelesswidget
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
@@ -11,17 +12,13 @@ class LayoutRow extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        IconButton(
-                          icon: Icon(Icons.menu),
-                          tooltip: 'Navigation menu',
-                          onPressed: null, // null disables the button
-                        ),
                         Spacer(),
                         Text(
                           'Kantin Politeknik Kampar',
                           textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 25),
                         ),
-                        Spacer()
+                        Spacer() //
                       ],
                     )
                   ],
